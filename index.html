@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfolio</title>
+    <meta name="description" content="ポートフォリオです" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- favicon/webclipicon -->
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+
+    <!-- ogp -->
+    <meta property="og:site_name" content="My Portfolio" />
+    <meta
+      property="og:url"
+      content="https://zero-plus.io/lesson/ogp/hp_ogp.jpg"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="My Portfolio" />
+    <meta property="og:description" content="ポートフォリオです" />
+    <meta
+      property="og:image"
+      content="https://zero-plus.io/lesson/ogp/hp_ogp.jpg"
+    />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="ポートフォリオです" />
+    <meta
+      name="twitter:image:src"
+      content="https://zero-plus.io/lesson/ogp/hp_ogp.jpg"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body class="body">
+    <header class="l_header">
+      <div class="l_header__inner">
+        <nav class="l_header-nav" id="js-nav">
+          <ul class="l_header-nav_list">
+            <li class="l_header-nav_item">
+              <a href="#about" class="l_header-nav_link">About</a>
+            </li>
+            <li class="l_header-nav_item">
+              <a href="#skill" class="l_header-nav_link">Skill</a>
+            </li>
+            <li class="l_header-nav_item">
+              <a href="#works" class="l_header-nav_link">Works</a>
+            </li>
+            <li class="l_header-nav_item">
+              <a href="#contact" class="l_header-nav_link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__hamburger m_hamburger" id="js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <div class="kv"></div>
+    <main class="l_main">
+      <section class="top_about l_contents js_about-trigger" id="about">
+        <div class="l_container">
+          <h2 class="m_section_ttl">About</h2>
+          <div class="top_about-contents js_about">
+            <div class="top_about-img_wrapper">
+              <img src="img/me.PNG" alt="Me" class="top_about-img" />
+            </div>
+            <div class="top_about-txt_wrapper">
+              <dl class="top_about-txt">
+                <dt class="top_about-name_sub">Name</dt>
+                <dd class="top_about-name">打田　有佳</dd>
+                <dt>Born in</dt>
+                <dd>三重県</dd>
+                <dt>Live in</dt>
+                <dd>神奈川県</dd>
+                <dt>Love</dt>
+                <dd>
+                  人、旅行、映画、カフェ<br />人が好きで、背景にある文化や環境を覗きたくて<br />ルーツになる所は国内海外問わず訪れます。
+                </dd>
+                <dt>Mission</dt>
+                <dd>
+                  クライアントとユーザーのニーズを第一に考え、<br />感動を生み出す作品作りができるよう努めます。<br />
+                  期日を守って誠実に対応できるよう心がけています。
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <!-- <div class="m_btn">
+            <a href="#" class="m_btn-link">トップに戻る</a>
+          </div> -->
+        </div>
+      </section>
+      <section class="top_skill l_contents" id="skill">
+        <div class="l_container js_skill-trigger">
+          <h2 class="m_section_ttl">Skill</h2>
+          <div class="top_skill-contents">
+            <div class="top_skill-contents_items js_skill">
+              <div class="top_skill-img_wrapper__html_css">
+                <img src="img/html.svg" alt="" class="top_skill-img" />
+                <img src="img/css.svg" alt="" class="top_skill-img" />
+              </div>
+              <div class="top_skill-txt">
+                <p class="top_skill-ttl">HTML5 & CSS3</p>
+                <p class="top_skill-sub">
+                  レスポンシブを含め、基本的なコー<br />ディングができます。
+                  使用エディタは<br />VidualStudioCodeです。
+                </p>
+              </div>
+            </div>
+
+            <div class="top_skill-contents_items js_skill">
+              <div class="top_skill-img_wrapper">
+                <img src="img/js.svg" alt="" class="top_skill-img" />
+              </div>
+              <div class="top_skill-txt">
+                <p class="top_skill-ttl">JavaScript</p>
+                <p class="top_skill-sub">
+                  jQueryと一緒にこれからめちゃめちゃ<br />書けるようになる予定s！
+                </p>
+              </div>
+            </div>
+            <div class="top_skill-contents_items js_skill">
+              <div class="top_skill-img_wrapper">
+                <img src="img/illa.PNG" alt="" class="top_skill-img" />
+              </div>
+              <div class="top_skill-txt">
+                <p class="top_skill-ttl">illustrator</p>
+                <p class="top_skill-sub">デザインカンプも作れます。</p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="m_btn">
+            <a href="#" class="m_btn-link">トップに戻る</a>
+          </div> -->
+        </div>
+      </section>
+      <section class="top_works l_contents" id="works">
+        <div class="l_container">
+          <h2 class="m_section_ttl">Works</h2>
+          <div class="top_works-contents">
+            <div class="top_works-img_wrapper">
+              <img src="img/icon.PNG" alt="" class="top_works-img" />
+              <div class="top_works-txt_wrapper">Comimg soon...</div>
+            </div>
+
+            <div class="top_works-img_wrapper">
+              <img src="img/icon02.PNG" alt="" class="top_works-img" />
+              <div class="top_works-txt_wrapper">Comimg soon...</div>
+            </div>
+
+            <div class="top_works-img_wrapper">
+              <img src="img/icon03.PNG" alt="" class="top_works-img" />
+              <div class="top_works-txt_wrapper">Comimg soon...</div>
+            </div>
+          </div>
+          <!-- <div class="m_btn">
+            <a href="#" class="m_btn-link">トップに戻る</a>
+          </div> -->
+        </div>
+      </section>
+      <section class="top_contact l_contents" id="contact">
+        <div class="l_container">
+          <h2 class="m_section_ttl">Contact</h2>
+          <form
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdN3oWIOng-fwk7PWMNLjgkK9fBvQtHf0qrLw_edAhHEipiGA/formResponse"
+            class="top_contact_form"
+          >
+            <dl class="top_contact_form_list">
+              <dt class="top_contact_form_heading">お名前　※必須</dt>
+              <dd class="top_contact_form_detail">
+                <input
+                  name="entry.2005620554"
+                  type="text"
+                  class="top_contact_form_input"
+                  placeholder="例）山田　花子"
+                />
+              </dd>
+              <dt class="top_contact_form_heading">お名前 (フリガナ)　※必須</dt>
+              <dd class="top_contact_form_detail">
+                <input
+                  name="entry.1291041341"
+                  type="text"
+                  class="top_contact_form_input"
+                  placeholder="例）ヤマダ　ハナコ"
+                />
+              </dd>
+
+              <dt class="top_contact_form_heading">メールアドレス　※必須</dt>
+              <dd class="top_contact_form_detail">
+                <input
+                  name="entry.1045781291"
+                  type="email"
+                  class="top_contact_form_input"
+                  placeholder="例）info@sample.com"
+                />
+              </dd>
+              <dt class="top_contact_form_heading">電話番号</dt>
+              <dd class="top_contact_form_detail">
+                <input
+                  name="entry.1166974658"
+                  type="tel"
+                  class="top_contact_form_input"
+                  placeholder="例）0312345678"
+                />
+              </dd>
+              <dt class="top_contact_form_heading">お問い合わせ内容　※必須</dt>
+              <dd class="top_contact_form_detail">
+                <textarea
+                  name="entry.839337160"
+                  class="top_contact_form_textarea"
+                ></textarea>
+              </dd>
+            </dl>
+
+            <div class="top_btn">
+              <input
+                type="submit"
+                class="top_btn-link"
+                value="この内容で送信する"
+              />
+            </div>
+          </form>
+          <!-- <div class="m_btn">
+            <a href="#" class="m_btn-link">トップに戻る</a>
+          </div> -->
+        </div>
+      </section>
+    </main>
+    <footer class="l_footer">
+      <p class="footer-copyright"><small>&copy; 2023 Yuka Uchida</small></p>
+    </footer>
+  </body>
+</html>

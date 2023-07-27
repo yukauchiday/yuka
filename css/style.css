@@ -351,6 +351,9 @@ body {
 }
 
 /* ---------- skill ---------- */
+.top_skill-contents_items {
+  width: 30%;
+}
 .top_skill-img_wrapper__html_css {
   width: 150px;
   display: flex;

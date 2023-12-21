@@ -3,256 +3,452 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Portfolio</title>
-    <meta name="description" content="ポートフォリオです" />
+    <title>Company CorPorate</title>
+    <meta
+      name="description"
+      content="スタートアップのデジタルマーケティングを徹底的にサポートする。"
+    />
     <meta name="format-detection" content="telephone=no" />
-
-    <!-- favicon/webclipicon -->
+    <!-- favicon/web-clip-icon -->
+    <link rel="icon" href="favicon.ico" type="image/ico" />
     <link rel="icon" href="favicon.png" type="image/png" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="favicon.png" />
-
+    <link rel="apple-touch-icon" href="webclip.png" />
     <!-- ogp -->
-    <meta property="og:site_name" content="My Portfolio" />
-    <meta
-      property="og:url"
-      content="https://zero-plus.io/lesson/ogp/hp_ogp.jpg"
-    />
+    <meta property="og:site_name" content="Company" />
+    <meta property="og:url" content="サイトのURL" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="My Portfolio" />
-    <meta property="og:description" content="ポートフォリオです" />
+    <meta property="og:title" content="Company" />
     <meta
-      property="og:image"
-      content="https://zero-plus.io/lesson/ogp/hp_ogp.jpg"
+      property="og:description"
+      content="スタートアップのデジタルマーケティングを徹底的にサポートする。"
     />
+    <meta property="og:image" content="URL" />
     <meta property="og:locale" content="ja_JP" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:description" content="ポートフォリオです" />
     <meta
-      name="twitter:image:src"
-      content="https://zero-plus.io/lesson/ogp/hp_ogp.jpg"
+      name="twitter:description"
+      content="スタートアップのデジタルマーケティングを徹底的にサポートする。"
     />
-
+    <meta name="twitter:image:src" content="URL" />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
     <!-- css -->
     <link rel="stylesheet" href="css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <!-- js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.js" defer></script>
   </head>
-
-  <body class="body">
-    <header class="l_header">
-      <div class="l_header__inner">
-        <nav class="l_header-nav" id="js-nav">
-          <ul class="l_header-nav_list">
-            <li class="l_header-nav_item">
-              <a href="#about" class="l_header-nav_link">About</a>
-            </li>
-            <li class="l_header-nav_item">
-              <a href="#skill" class="l_header-nav_link">Skill</a>
-            </li>
-            <li class="l_header-nav_item">
-              <a href="#works" class="l_header-nav_link">Works</a>
-            </li>
-            <li class="l_header-nav_item">
-              <a href="#contact" class="l_header-nav_link">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="header__hamburger m_hamburger" id="js-hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+  <body class="js_body">
+    <div class="m_opening js_opening">
+      <div class="m_opening_txt js_opening-txt">
+        <p class="m_opening_heading">Company</p>
+        <p class="m_opening_desc">
+          スタートアップの<br />
+          デジタルマーケティングを<br />
+          徹底的にサポートする。
+        </p>
       </div>
+    </div>
+    <header class="l_header">
+      <p class="l_header-logo">
+        <a href="index.html" class="l_header-logo_link">Company</a>
+      </p>
+      <nav class="l_header-nav js_nav">
+        <ul class="l_header-nav_list">
+          <li class="l_header-nav_item">
+            <a href="index.html" class="l_header-nav_link">トップ</a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="about.html" class="l_header-nav_link">私たちについて</a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="service.html" class="l_header-nav_link">サービス</a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="case.html" class="l_header-nav_link">事例</a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="contact.html" class="l_header-nav_link">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="m_hamburger js_hamburger">
+        <span class="m_hamburger-bar js_hamburger-bar"></span>
+        <span class="m_hamburger-bar js_hamburger-bar"></span>
+        <span class="m_hamburger-bar js_hamburger-bar"></span>
+      </button>
     </header>
-    <div class="kv"></div>
-    <main class="l_main">
-      <section class="top_about l_contents js_about-trigger" id="about">
-        <div class="l_container">
-          <h2 class="m_section_ttl">About</h2>
-          <div class="top_about-contents js_about">
-            <div class="top_about-img_wrapper">
-              <img src="img/me.PNG" alt="Me" class="top_about-img" />
-            </div>
-            <div class="top_about-txt_wrapper">
-              <dl class="top_about-txt">
-                <dt class="top_about-name_sub">Name</dt>
-                <dd class="top_about-name">打田　有佳</dd>
-                <dt>Born in</dt>
-                <dd>三重県</dd>
-                <dt>Live in</dt>
-                <dd>神奈川県</dd>
-                <dt>Love</dt>
-                <dd>
-                  人、旅行、映画、カフェ<br />人が好きで、その人の背景にある文化や環境を覗きたくて<br />ルーツになる所を国内海外問わず訪れるのも大好きです。
-                </dd>
-                <dt>Mission</dt>
-                <dd>
-                  クライアントとユーザーのニーズを第一に考え、<br />感動を生み出す作品作りをしたいと思っています。<br />
-                  期日を守って誠実に対応できるよう心がけています。
-                </dd>
-              </dl>
-            </div>
-          </div>
-          <!-- <div class="m_btn">
-            <a href="#" class="m_btn-link">トップに戻る</a>
-          </div> -->
+    <div class="top_kv">
+      <div class="top_kv_contents l_container">
+        <p class="top_kv_sub-copy js_sub-copy">
+          START UP FOR DIGITAL MARKETING.
+        </p>
+        <p class="top_kv_copy js_copy">
+          スタートアップの<br />
+          デジタルマーケティングを<br />
+          徹底的にサポートする。
+        </p>
+        <div class="m_btn-wrapper top_kv_btn-wrapper">
+          <a href="contact.html" class="m_btn m_btn__cta"> 無料で相談する </a>
         </div>
-      </section>
-      <section class="top_skill l_contents" id="skill">
-        <div class="l_container js_skill-trigger">
-          <h2 class="m_section_ttl">Skill</h2>
-          <div class="top_skill-contents">
-            <div class="top_skill-contents_items js_skill">
-              <div class="top_skill-img_wrapper__html_css">
-                <img src="img/html.svg" alt="" class="top_skill-img" />
-                <img src="img/css.svg" alt="" class="top_skill-img" />
+        <!-- /.m_btn-wrapper -->
+      </div>
+      <!-- /.top_kv_contents -->
+      <div class="top_kv-scroll-down">
+        <span class="top_kv-scroll-down_txt">SCROLL</span>
+        <div class="top_kv-scroll-down_arrow"></div>
+        <!-- /.top_kv-scroll-down_arrow -->
+      </div>
+      <!-- /.top_kv-scroll-down -->
+    </div>
+    <!-- /.kv -->
+    <div class="top_kv-slideshow js_slideshow">
+      <div class="swiper-wrapper">
+        <div class="top_kv-slideshow_slide swiper-slide">
+          <img class="top_kv-slideshow_slide_img" src="img/bg_kv.jpg" alt="" />
+        </div>
+        <!-- /.top_kv-slideshow_slide -->
+        <div class="top_kv-slideshow_slide swiper-slide">
+          <img
+            class="top_kv-slideshow_slide_img"
+            src="img/bg_kv02.jpg"
+            alt=""
+          />
+        </div>
+        <!-- /.top_kv-slideshow_slide -->
+        <div class="top_kv-slideshow_slide swiper-slide">
+          <img
+            class="top_kv-slideshow_slide_img"
+            src="img/bg_kv03.jpg"
+            alt=""
+          />
+        </div>
+        <!-- /.top_kv-slideshow_slide -->
+        <div class="top_kv-slideshow_slide swiper-slide">
+          <img
+            class="top_kv-slideshow_slide_img"
+            src="img/bg_kv04.jpg"
+            alt=""
+          />
+        </div>
+        <!-- /.top_kv-slideshow_slide -->
+        <div class="top_kv-slideshow_slide swiper-slide">
+          <img
+            class="top_kv-slideshow_slide_img"
+            src="img/bg_kv05.jpg"
+            alt=""
+          />
+        </div>
+        <!-- /.top_kv-slideshow_slide -->
+      </div>
+      <!-- /.swiper-wrapper -->
+    </div>
+    <!-- /.top_kv-slideshow -->
+    <main class="top_main">
+      <section class="top_about">
+        <div class="l_contents">
+          <h2 class="m_section_title m_section_title__about">私たちについて</h2>
+          <div class="top_about_body">
+            <div class="top_about_contents l_container">
+              <div class="top_about_img-wrapper">
+                <img
+                  src="img/img_about-us.jpg"
+                  alt=""
+                  width="768"
+                  height="576"
+                  class="top_about_img"
+                />
               </div>
-              <div class="top_skill-txt">
-                <p class="top_skill-ttl">HTML5 & CSS3</p>
-                <p class="top_skill-sub">
-                  レスポンシブを含め、基本的なコーディングができます。
-                  使用エディタはVidualStudioCodeです。
+              <!-- /.top_about_img-wrapper -->
+              <div class="top_about_txts">
+                <h2 class="top_about_heading">
+                  スタートアップの<br />
+                  デジタルマーケティングを<br />
+                  全力で支援する会社です。
+                </h2>
+                <p class="top_about_desc">
+                  親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。親譲りの無鉄砲で小供の時から損ばかりしている。
                 </p>
               </div>
+              <!-- /.top_about_txts -->
             </div>
+            <!-- /.top_about_contents -->
 
-            <div class="top_skill-contents_items js_skill">
-              <div class="top_skill-img_wrapper">
-                <img src="img/js.svg" alt="" class="top_skill-img" />
-              </div>
-              <div class="top_skill-txt">
-                <p class="top_skill-ttl">JavaScript</p>
-                <p class="top_skill-sub">
-                  jQueryと一緒にこれからめちゃめちゃ書けるようになる予定！がんばれ私
-                </p>
-              </div>
+            <div class="m_btn-wrapper top_about_btn-wrapper">
+              <a href="about.html" class="m_btn m_btn__more"> 詳しく見る </a>
             </div>
-            <div class="top_skill-contents_items js_skill">
-              <div class="top_skill-img_wrapper">
-                <img src="img/illa.PNG" alt="" class="top_skill-img" />
-              </div>
-              <div class="top_skill-txt">
-                <p class="top_skill-ttl">illustrator</p>
-                <p class="top_skill-sub">Figma、Photoshopと合わせて勉強中です。</p>
-              </div>
-            </div>
+            <!-- /.m_btn-wrapper -->
           </div>
-          <!-- <div class="m_btn">
-            <a href="#" class="m_btn-link">トップに戻る</a>
-          </div> -->
+          <!-- /.top_about_body -->
         </div>
+        <!-- /.l_contents -->
       </section>
-      <section class="top_works l_contents" id="works">
-        <div class="l_container">
-          <h2 class="m_section_ttl">Works</h2>
-          <div class="top_works-contents">
-            <div class="top_works-img_wrapper">
-              <img src="img/icon.PNG" alt="" class="top_works-img" />
-              <div class="top_works-txt_wrapper">Comimg soon...</div>
+      <section class="top_service">
+        <div class="l_contents js_service-trigger">
+          <h2 class="m_section_title m_section_title__service">サービス</h2>
+          <div class="top_service_body l_container">
+            <p class="top_service_desc">
+              親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
+            </p>
+            <div class="m_service_contents">
+              <div class="m_service_item js_service">
+                <div class="m_service_item__circle">
+                  <div class="m_service_item_icon-wrapper">
+                    <img
+                      src="img/icon_service.png"
+                      alt="マーケティング支援"
+                      width="100"
+                      height="100"
+                      class="m_service_item_icon"
+                    />
+                  </div>
+                </div>
+                <!-- /.m_service_item_icon-wrapper -->
+                <p class="m_service_item_name">マーケティング支援</p>
+              </div>
+              <!-- /.m_service_item -->
+              <div class="m_service_item js_service">
+                <div class="m_service_item__circle">
+                  <div class="m_service_item_icon-wrapper">
+                    <img
+                      src="img/icon_service02.png"
+                      alt="webサイト制作"
+                      width="100"
+                      height="100"
+                      class="m_service_item_icon"
+                    />
+                  </div>
+                </div>
+                <!-- /.m_service_item_icon-wrapper -->
+                <p class="m_service_item_name">webサイト制作</p>
+              </div>
+              <!-- /.m_service_item -->
+              <div class="m_service_item js_service">
+                <div class="m_service_item__circle">
+                  <div class="m_service_item_icon-wrapper">
+                    <img
+                      src="img/icon_service03.png"
+                      alt="SEO対策支援"
+                      width="100"
+                      height="100"
+                      class="m_service_item_icon"
+                    />
+                  </div>
+                </div>
+                <!-- /.m_service_item_icon-wrapper -->
+                <p class="m_service_item_name">SEO対策支援</p>
+              </div>
+              <!-- /.m_service_item -->
+              <div class="m_service_item js_service">
+                <div class="m_service_item__circle">
+                  <div class="m_service_item_icon-wrapper">
+                    <img
+                      src="img/icon_service04.png"
+                      alt="広告効果測定"
+                      width="100"
+                      height="100"
+                      class="m_service_item_icon"
+                    />
+                  </div>
+                </div>
+                <!-- /.m_service_item_icon-wrapper -->
+                <p class="m_service_item_name">広告効果測定</p>
+              </div>
+              <!-- /.m_service_item -->
+              <div class="m_service_item js_service">
+                <div class="m_service_item__circle">
+                  <div class="m_service_item_icon-wrapper">
+                    <img
+                      src="img/icon_service05.png"
+                      alt="アクセス解析代行"
+                      width="100"
+                      height="100"
+                      class="m_service_item_icon"
+                    />
+                  </div>
+                </div>
+                <!-- /.m_service_item_icon-wrapper -->
+                <p class="m_service_item_name">アクセス解析代行</p>
+              </div>
+              <!-- /.m_service_item -->
+              <div class="m_service_item js_service">
+                <div class="m_service_item__circle">
+                  <div class="m_service_item_icon-wrapper">
+                    <img
+                      src="img/icon_service06.png"
+                      alt="SNSマーケ支援"
+                      width="100"
+                      height="100"
+                      class="m_service_item_icon"
+                    />
+                  </div>
+                </div>
+                <!-- /.m_service_item_icon-wrapper -->
+                <p class="m_service_item_name">SNSマーケ支援</p>
+              </div>
+              <!-- /.m_service_item -->
             </div>
+            <!-- /.m_service_contents -->
 
-            <div class="top_works-img_wrapper">
-              <img src="img/icon02.PNG" alt="" class="top_works-img" />
-              <div class="top_works-txt_wrapper">Comimg soon...</div>
+            <div class="m_btn-wrapper top_service_btn-wrapper">
+              <a href="service.html" class="m_btn m_btn__more"> 詳しく見る </a>
             </div>
-
-            <div class="top_works-img_wrapper">
-              <img src="img/icon03.PNG" alt="" class="top_works-img" />
-              <div class="top_works-txt_wrapper">Comimg soon...</div>
-            </div>
+            <!-- /.m_btn-wrapper -->
           </div>
-          <!-- <div class="m_btn">
-            <a href="#" class="m_btn-link">トップに戻る</a>
-          </div> -->
+          <!-- /.top_service_body -->
         </div>
+        <!-- /.l_contents -->
       </section>
-      <section class="top_contact l_contents" id="contact">
-        <div class="l_container">
-          <h2 class="m_section_ttl">Contact</h2>
-          <form
-            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdN3oWIOng-fwk7PWMNLjgkK9fBvQtHf0qrLw_edAhHEipiGA/formResponse"
-            class="top_contact_form"
-          >
-            <dl class="top_contact_form_list">
-              <dt class="top_contact_form_heading">お名前　※必須</dt>
-              <dd class="top_contact_form_detail">
-                <input
-                  name="entry.2005620554"
-                  type="text"
-                  class="top_contact_form_input"
-                  placeholder="例）山田　花子"
-                />
-              </dd>
-              <dt class="top_contact_form_heading">お名前 (フリガナ)　※必須</dt>
-              <dd class="top_contact_form_detail">
-                <input
-                  name="entry.1291041341"
-                  type="text"
-                  class="top_contact_form_input"
-                  placeholder="例）ヤマダ　ハナコ"
-                />
-              </dd>
+      <section class="top_case l_container-lg">
+        <div class="l_contents">
+          <h2 class="m_section_title m_section_title__case">実績</h2>
+          <div class="top_case_body">
+            <div class="top_case_list-wrapper js_case-swiper">
+              <ul class="top_case_list swiper-wrapper">
+                <li class="top_case_item swiper-slide">
+                  <a href="" class="top_case_item_link">
+                    <div class="top_case_item_thumb-wrapper">
+                      <img
+                        src="img/img_case.jpg"
+                        alt=""
+                        width="686"
+                        height="486"
+                        class="top_case_item_thumb"
+                      />
+                    </div>
+                    <!-- /.top_case_item_thumb-wrapper -->
+                    <div class="top_case_item_txt">
+                      <h2 class="top_case_item_heading">
+                        8ヶ月でお問い合わせ数5倍達成！広告依存から脱出したプログラミングスクール
+                      </h2>
+                    </div>
+                    <!-- /.top_case_item_txt -->
+                  </a>
+                </li>
+                <li class="top_case_item swiper-slide">
+                  <a href="" class="top_case_item_link">
+                    <div class="top_case_item_thumb-wrapper">
+                      <img
+                        src="img/img_case02.jpg"
+                        alt=""
+                        width="686"
+                        height="486"
+                        class="top_case_item_thumb"
+                      />
+                    </div>
+                    <!-- /.top_case_item_thumb-wrapper -->
+                    <div class="top_case_item_txt">
+                      <h2 class="top_case_item_heading">
+                        半年間で客足が3倍に！デジタルマーケティングを見直した都内カフェテリア
+                      </h2>
+                    </div>
+                    <!-- /.top_case_item_txt -->
+                  </a>
+                </li>
+                <li class="top_case_item swiper-slide">
+                  <a href="" class="top_case_item_link">
+                    <div class="top_case_item_thumb-wrapper">
+                      <img
+                        src="img/img_case03.jpg"
+                        alt=""
+                        width="686"
+                        height="486"
+                        class="top_case_item_thumb"
+                      />
+                    </div>
+                    <!-- /.top_case_item_thumb-wrapper -->
+                    <div class="top_case_item_txt">
+                      <h2 class="top_case_item_heading">
+                        初めてのwebマーケティングで、月30件の予約を増やしたレンタルオフィス
+                      </h2>
+                    </div>
+                    <!-- /.top_case_item_txt -->
+                  </a>
+                </li>
+              </ul>
+              <div class="top_case_dots swiper-pagination"></div>
 
-              <dt class="top_contact_form_heading">メールアドレス　※必須</dt>
-              <dd class="top_contact_form_detail">
-                <input
-                  name="entry.1045781291"
-                  type="email"
-                  class="top_contact_form_input"
-                  placeholder="例）info@sample.com"
-                />
-              </dd>
-              <dt class="top_contact_form_heading">電話番号</dt>
-              <dd class="top_contact_form_detail">
-                <input
-                  name="entry.1166974658"
-                  type="tel"
-                  class="top_contact_form_input"
-                  placeholder="例）0312345678"
-                />
-              </dd>
-              <dt class="top_contact_form_heading">お問い合わせ内容　※必須</dt>
-              <dd class="top_contact_form_detail">
-                <textarea
-                  name="entry.839337160"
-                  class="top_contact_form_textarea"
-                ></textarea>
-              </dd>
-            </dl>
-
-            <div class="top_btn">
-              <input
-                type="submit"
-                class="top_btn-link"
-                value="この内容で送信する"
-              />
+              <button
+                class="top_case_nav top_case_nav__prev swiper-button-prev"
+              ></button>
+              <button
+                class="top_case_nav top_case_nav__next swiper-button-next"
+              ></button>
             </div>
-          </form>
-          <!-- <div class="m_btn">
-            <a href="#" class="m_btn-link">トップに戻る</a>
-          </div> -->
+            <!-- /.top_case_list-wrapper -->
+            <div class="m_btn-wrapper top_case_btn-wrapper">
+              <a href="case.html" class="m_btn m_btn__more"> 詳しく見る </a>
+            </div>
+            <!-- /.m_btn-wrapper -->
+          </div>
+          <!-- /.top_case_body -->
         </div>
+        <!-- /.l_contents -->
       </section>
     </main>
+    <div class="m_cta">
+      <h2 class="m_cta_copy">お問い合わせはこちら</h2>
+      <p class="m_cta_txt">
+        スタートアップのデジタルマーケについて<br />
+        お気軽にご相談ください
+      </p>
+      <div class="m_btn-wrapper m_cta_btn-wrapper">
+        <a href="contact.html" class="m_btn m_btn__cta"> 無料で相談する </a>
+      </div>
+      <!-- /.m_btn-wrapper -->
+    </div>
+    <!-- /.m_cta -->
     <footer class="l_footer">
-      <p class="footer-copyright"><small>&copy; 2023 Yuka Uchida</small></p>
+      <div class="l_footer_contents">
+        <div class="l_footer_info">
+          <p class="l_footer-logo">
+            <a href="index.html" class="l_footer-logo_link">Company</a>
+          </p>
+          <p class="l_footer_address">
+            〒000-0000<br />
+            東京都豊島区池袋0-00-0
+          </p>
+        </div>
+        <!-- /.l_footer_info -->
+        <div class="l_footer-nav" role="navigation">
+          <ul class="l_footer-nav_list">
+            <li class="l_footer-nav_item">
+              <a href="index.html" class="l_footer-nav_link">トップ</a>
+            </li>
+            <li class="l_footer-nav_item">
+              <a href="about.html" class="l_footer-nav_link">私たちについて</a>
+            </li>
+            <li class="l_footer-nav_item">
+              <a href="service.html" class="l_footer-nav_link">サービス</a>
+            </li>
+            <li class="l_footer-nav_item">
+              <a href="case.html" class="l_footer-nav_link">事例</a>
+            </li>
+            <li class="l_footer-nav_item">
+              <a href="contact.html" class="l_footer-nav_link">お問い合わせ</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.l_footer-nav -->
+      </div>
+      <!-- /.l_footer_contents -->
+
+      <p class="l_footer-copyright">
+        <small class="l_footer-copyright_txt">&copy; 2018 Company inc.</small>
+      </p>
     </footer>
   </body>
 </html>

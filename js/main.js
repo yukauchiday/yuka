@@ -17,6 +17,7 @@ hamburger.addEventListener("click", function () {
   navigation.classList.toggle("is-active");
   body.classList.toggle("is-active");
 });
+
 /*---------- スライドイン ----------*/
 // gsap
 //   .timeline()

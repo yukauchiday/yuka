@@ -80,6 +80,7 @@ body {
   padding-top: 120px;
 }
 
+
 .l_header {
   position: absolute;
   top: 0;
@@ -152,7 +153,6 @@ body {
 .l_header-nav_link {
   display: block;
 }
-
 .l_footer {
   padding: 64px 0 24px;
 }

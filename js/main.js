@@ -17,7 +17,6 @@ hamburger.addEventListener("click", function () {
   navigation.classList.toggle("is-active");
   body.classList.toggle("is-active");
 });
-
 /*---------- スライドイン ----------*/
 // gsap
 //   .timeline()
@@ -181,17 +180,6 @@ const closingAnim = function (content) {
 };
 
 const openingAnim = function (content) {
-  // ウィンドウの幅を取得
-  const windowWidth = window.innerWidth;
-
-  // paddingの初期値を設定
-  let paddingValue = "16px 48px 16px 16px";
-
-  // ウィンドウの幅が1080px以上の場合、paddingを16pxに変更
-  if (windowWidth >= 1080) {
-    paddingValue = "16px";
-  }
-
   gsap.fromTo(
     content,
     {
@@ -201,12 +189,28 @@ const openingAnim = function (content) {
     {
       height: "auto",
       opacity: 1,
-      padding: 0, // 条件に基づいて設定されたpadding値を使用
       duration: 0.4,
       ease: "Power4.inOut",
     }
   );
 };
+
+const slideshow = new Swiper(".js_slideshow", {
+  speed: 1200,
+  effect: "fade",
+  pagination: {
+    el: ".swiper-pagination_slideshow",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next_slideshow",
+    prevEl: ".swiper-button-prev_slideshow",
+  },
+  autoplay: {
+    delay: 1600,
+    disableOnInteraction: false,
+  },
+});
 
 /*---------- カルーセルパネル ----------*/
 

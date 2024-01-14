@@ -80,7 +80,6 @@ body {
   padding-top: 120px;
 }
 
-
 .l_header {
   position: absolute;
   top: 0;
@@ -134,10 +133,7 @@ body {
   gap: 56px;
   flex-direction: column;
   align-items: center;
-  top: 5%;
-    right: 84%;
-    position: absolute;
-    text-align: center;
+  justify-content: center;
   height: 100%;
 }
 
@@ -156,6 +152,7 @@ body {
 .l_header-nav_link {
   display: block;
 }
+
 .l_footer {
   padding: 64px 0 24px;
 }
@@ -1030,8 +1027,9 @@ body {
 .service_faq-question_mark {
   flex-shrink: 0;
   position: relative;
+  height: 36px;
   width: 16px;
-  margin: auto 0 auto 8px;
+  margin-left: 8px;
 }
 
 .service_faq-question_mark::before {
@@ -1058,7 +1056,7 @@ body {
 }
 
 .service_faq-answer {
-
+  padding: 16px;
   display: flex;
   width: 100%;
   border-top: 1px solid var(--gray-color02);
@@ -1217,6 +1215,7 @@ body {
 /*---------- case ----------*/
 .case_main {
   padding-bottom: 120px;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
